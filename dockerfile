@@ -8,7 +8,7 @@ RUN ./gradlew bootJar --no-daemon
 
 FROM openjdk:17-jdk-slim
 
-EXPOSE 8080
+EXPOSE 8082
 
 COPY --from=build /build/libs/admin-0.0.1-SNAPSHOT.jar app.jar
 
